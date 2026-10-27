@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaringan Komputer & Internet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #e2e8f0; /* slate-200 */
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7); /* slate-800 with opacity */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .custom-radio:checked + div {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col bg-gradient-to-br from-slate-900 to-indigo-950">
+
+    <!-- Header / Hero Section -->
+    <header class="py-16 text-center px-4">
+        <div class="inline-block p-4 rounded-full bg-blue-500/20 text-blue-400 mb-4">
+            <i class="fas fa-network-wired text-4xl"></i>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Jaringan Komputer & Internet</h1>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+            Modul Pembelajaran Interaktif Bab 5 - Informatika Kelas X
+        </p>
+    </header>
+
+    <!-- Content Section -->
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl pb-16">
+        
+        <!-- Materi 1 -->
+        <section class="glass-card rounded-2xl p-6 md:p-8 mb-8 shadow-xl">
+            <h2 class="text-2xl font-semibold text-blue-400 border-b border-slate-700 pb-3 mb-6 flex items-center gap-3">
+                <i class="fas fa-globe"></i> 1. Jaringan Lokal vs Internet
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-medium text-white mb-2 text-indigo-300">Jaringan Lokal (LAN)</h3>
+                    <p class="text-sm text-slate-300 mb-3">
+                        Jaringan yang mencakup wilayah kecil dan terbatas. Biasanya dikelola pribadi untuk berbagi data dan perangkat secara lokal.
+                    </p>
+                    <p class="text-sm text-slate-400"><i class="fas fa-info-circle text-blue-400 mr-1"></i> <strong>Contoh:</strong> Jaringan Lab TIK sekolah, jaringan Wi-Fi di rumah.</p>
+                </div>
+                <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-medium text-white mb-2 text-indigo-300">Internet</h3>
+                    <p class="text-sm text-slate-300 mb-3">
+                        Jaringan komputer global yang menghubungkan miliaran perangkat di seluruh dunia, gabungan dari banyak jaringan lokal.
+                    </p>
+                    <p class="text-sm text-slate-400"><i class="fas fa-info-circle text-blue-400 mr-1"></i> <strong>Contoh:</strong> Mengakses Wikipedia, bermain game online lintas negara.</p>
+                </div>
+            </div>
+            <h3 class="text-lg font-medium text-white mb-3">Jenis Konektivitas</h3>
+            <ul class="list-disc pl-5 text-slate-300 space-y-2">
+                <li><strong>Jaringan Kabel (Wired):</strong> Menggunakan kabel fisik (Fiber Optik, kabel UTP/LAN). Cenderung lebih stabil dan cepat.</li>
+                <li><strong>Jaringan Nirkabel (Wireless):</strong> Menggunakan gelombang radio (Wi-Fi, 4G, 5G, Satelit). Lebih praktis dan mendukung mobilitas.</li>
+            </ul>
+        </section>
+
+        <!-- Materi 2 -->
+        <section class="glass-card rounded-2xl p-6 md:p-8 mb-8 shadow-xl">
+            <h2 class="text-2xl font-semibold text-blue-400 border-b border-slate-700 pb-3 mb-6 flex items-center gap-3">
+                <i class="fas fa-mobile-alt"></i> 2. Komunikasi Data Melalui Ponsel
+            </h2>
+            <p class="text-slate-300 mb-4">
+                Ponsel tidak terhubung dengan kabel, melainkan menggunakan gelombang radio yang ditangkap oleh menara seluler atau BTS (Base Transceiver Station). BTS meneruskan data ke pusat jaringan dan ke internet global.
+            </p>
+            <div class="bg-slate-800/80 p-4 rounded-lg mb-4 border border-slate-700 flex flex-wrap gap-4 justify-between items-center">
+                <div class="text-center flex-1 min-w-[100px]">
+                    <div class="text-2xl font-bold text-indigo-400 mb-1">3G</div>
+                    <div class="text-xs text-slate-400">Teks & Gambar ringan</div>
+                </div>
+                <div class="hidden sm:block text-slate-500"><i class="fas fa-chevron-right"></i></div>
+                <div class="text-center flex-1 min-w-[100px]">
+                    <div class="text-2xl font-bold text-blue-400 mb-1">4G / LTE</div>
+                    <div class="text-xs text-slate-400">Streaming HD & Video Call</div>
+                </div>
+                <div class="hidden sm:block text-slate-500"><i class="fas fa-chevron-right"></i></div>
+                <div class="text-center flex-1 min-w-[100px]">
+                    <div class="text-2xl font-bold text-purple-400 mb-1">5G</div>
+                    <div class="text-xs text-slate-400">Kecepatan super, latensi rendah</div>
+                </div>
+            </div>
+            <p class="text-slate-300 text-sm">
+                <strong>Handoff:</strong> Proses dimana HP otomatis mencari sinyal menara BTS baru saat kamu bepergian agar koneksi tidak terputus. <br>
+                <strong>Tethering:</strong> Fitur untuk membagikan koneksi internet HP ke perangkat lain (misal: laptop).
+            </p>
+        </section>
+
+        <!-- Materi 3 -->
+        <section class="glass-card rounded-2xl p-6 md:p-8 mb-12 shadow-xl">
+            <h2 class="text-2xl font-semibold text-blue-400 border-b border-slate-700 pb-3 mb-6 flex items-center gap-3">
+                <i class="fas fa-shield-alt"></i> 3. Proteksi Data & Enkripsi
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-medium text-white mb-2 text-indigo-300">Pentingnya Proteksi Data Pribadi</h3>
+                    <p class="text-sm text-slate-300 mb-3">
+                        Data pribadi (NIK, password, OTP) harus dijaga. Jika bocor, rentan terhadap penipuan (Phishing) atau pencurian. Hati-hati dengan Wi-Fi publik tanpa password karena mudah disadap.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium text-white mb-2 text-indigo-300">Penerapan Enkripsi</h3>
+                    <p class="text-sm text-slate-300 mb-2">
+                        <strong>Enkripsi</strong> adalah proses mengacak data asli (<em>plaintext</em>) menjadi teks rahasia (<em>ciphertext</em>). Data ini hanya bisa dibuka dengan "kunci" yang tepat.
+                    </p>
+                    <ul class="text-sm text-slate-300 list-disc pl-5">
+                        <li><strong>End-to-End Encryption:</strong> Pada WhatsApp, pesan hanya bisa dibaca pengirim dan penerima.</li>
+                        <li><strong>HTTPS:</strong> Ikon gembok di browser menandakan jalur komunikasi ke website aman.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ SECTION -->
+        <div id="quiz-container" class="glass-card rounded-2xl p-6 md:p-8 shadow-xl border-t-4 border-t-blue-500">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-white mb-2">Uji Pemahaman</h2>
+                <p class="text-slate-400">Kerjakan 20 soal kuis di bawah ini untuk menguji pengetahuanmu.</p>
+            </div>
+
+            <!-- Form Data Siswa -->
+            <div id="student-form" class="max-w-md mx-auto bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <div id="form-error" class="hidden bg-red-900/50 text-red-300 p-3 rounded-lg text-sm mb-4 border border-red-800">
+                    Harap lengkapi Nama dan Kelas terlebih dahulu!
+                </div>
+                <div class="mb-4">
+                    <label class="block text-slate-300 text-sm font-bold mb-2" for="student-name">
+                        Nama Lengkap
+                    </label>
+                    <input class="w-full bg-slate-900 text-white border border-slate-600 rounded-lg py-2 px-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" id="student-name" type="text" placeholder="Masukkan nama kamu...">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-slate-300 text-sm font-bold mb-2" for="student-class">
+                        Kelas
+                    </label>
+                    <select class="w-full bg-slate-900 text-white border border-slate-600 rounded-lg py-2 px-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition appearance-none" id="student-class">
+                        <option value="">-- Pilih Kelas --</option>
+                        <option value="Kelas XA">Kelas XA</option>
+                        <option value="Kelas XB">Kelas XB</option>
+                    </select>
+                </div>
+                <button onclick="startQuiz()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition shadow-lg shadow-blue-900/20">
+                    Mulai Kuis <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Quiz Questions (Hidden initially) -->
+            <div id="questions-area" class="hidden">
+                <div class="flex justify-between items-center mb-6 bg-slate-800 p-4 rounded-lg border border-slate-700">
+                    <div>
+                        <span class="text-slate-400 text-sm">Peserta:</span>
+                        <span id="display-student" class="text-white font-semibold ml-2"></span>
+                    </div>
+                </div>
+
+                <div id="questions-list" class="space-y-8">
+                    <!-- Questions will be injected here via JS -->
+                </div>
+
+                <div id="quiz-error" class="hidden bg-red-900/50 text-red-300 p-4 rounded-lg text-sm mt-8 border border-red-800 text-center">
+                    Harap jawab seluruh pertanyaan sebelum mengumpulkan! (Ada pertanyaan yang terlewat)
+                </div>
+
+                <button onclick="submitQuiz()" class="w-full mt-8 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg transition shadow-lg text-lg">
+                    Kumpulkan Jawaban <i class="fas fa-check-circle ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Results Area (Hidden initially) -->
+            <div id="result-area" class="hidden text-center py-8">
+                <div class="inline-block p-6 rounded-full bg-slate-800 border-4 border-blue-500 mb-6 w-40 h-40 flex items-center justify-center">
+                    <span id="score-display" class="text-5xl font-bold text-white">100</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2" id="result-greeting">Luar Biasa, Budi!</h3>
+                <p class="text-slate-400 mb-6" id="result-class">Kelas XA</p>
+                <div class="max-w-md mx-auto bg-slate-800 p-4 rounded-lg border border-slate-700 text-left mb-8">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-400">Jawaban Benar:</span>
+                        <span id="correct-count" class="text-green-400 font-bold">20</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Jawaban Salah:</span>
+                        <span id="wrong-count" class="text-red-400 font-bold">0</span>
+                    </div>
+                </div>
+                <button onclick="location.reload()" class="bg-slate-700 hover:bg-slate-600 text-white py-2 px-6 rounded-lg transition">
+                    <i class="fas fa-redo mr-2"></i> Ulangi Materi & Kuis
+                </button>
+                <button id="btn-view-data" class="mt-4 sm:mt-0 sm:ml-4 bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-lg transition shadow-lg shadow-indigo-900/20">
+                    <i class="fas fa-table mr-2"></i> Lihat Data Spreadsheet
+                </button>
+            </div>
+
+            <!-- Spreadsheet Area (Hidden initially) -->
+            <div id="spreadsheet-area" class="hidden mt-8 border-t border-slate-700 pt-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-white"><i class="fas fa-database text-indigo-400 mr-2"></i> Database Rekap Nilai</h2>
+                    <button id="btn-close-data" class="text-slate-400 hover:text-white transition bg-slate-800 p-2 rounded-lg">
+                        <i class="fas fa-times"></i> Tutup
+                    </button>
+                </div>
+                <div class="overflow-x-auto rounded-xl border border-slate-700 bg-slate-900/50">
+                    <table class="w-full text-left border-collapse whitespace-nowrap">
+                        <thead>
+                            <tr class="bg-slate-800 text-slate-300 text-sm uppercase tracking-wider border-b border-slate-700">
+                                <th class="p-4">Waktu (WIB)</th>
+                                <th class="p-4">Nama Siswa</th>
+                                <th class="p-4">Kelas</th>
+                                <th class="p-4 text-center">Benar</th>
+                                <th class="p-4 text-center">Nilai Akhir</th>
+                            </tr>
+                        </thead>
+                        <tbody id="spreadsheet-body" class="text-slate-300 divide-y divide-slate-700/50">
+                            <tr><td colspan="5" class="p-4 text-center text-slate-500">Memuat data dari database...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-6 text-slate-500 text-sm border-t border-slate-800">
+        &copy; 2026 Modul Informatika SMA. Designed for Interactive Learning.
+    </footer>
+
+    <!-- Application Logic -->
+    <script>
+        // ====================================================================
+        // GANTI TULISAN DI BAWAH INI DENGAN URL WEB APP GOOGLE APPS SCRIPT ANDA
+        // ====================================================================
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1mRGuldyhP3aq8ccl7Gws8d3CZWUuM9EJEEL1HV8LD_ifjH1jbQyJBlDTA2e1f6al/exec';
+
+        // Data Pertanyaan
+        const quizData = [
+            {
+                question: "Apa yang dimaksud dengan Jaringan Lokal (LAN)?",
+                options: ["Jaringan global di seluruh dunia", "Jaringan yang mencakup wilayah kecil seperti gedung atau sekolah", "Jaringan yang hanya bisa digunakan dengan kabel", "Jaringan satelit luar angkasa"],
+                answer: 1
+            },
+            {
+                question: "Manakah di bawah ini yang merupakan contoh penerapan jaringan lokal?",
+                options: ["Mengakses website luar negeri", "Bermain game online server Eropa", "Jaringan komputer di Laboratorium TIK sekolah", "Menghubungkan HP ke satelit"],
+                answer: 2
+            },
+            {
+                question: "Kumpulan dari banyak jaringan lokal di seluruh dunia yang saling terhubung disebut...",
+                options: ["Internet", "Intranet", "Bluetooth", "Tethering"],
+                answer: 0
+            },
+            {
+                question: "Media penghubung jaringan yang menggunakan gelombang radio tanpa kabel fisik disebut jaringan...",
+                options: ["Wired", "Nirkabel (Wireless)", "Fiber Optik", "UTP"],
+                answer: 1
+            },
+            {
+                question: "Contoh dari jaringan kabel (Wired Network) adalah...",
+                options: ["Wi-Fi", "Sinyal 4G", "Kabel Fiber Optik", "Bluetooth"],
+                answer: 2
+            },
+            {
+                question: "Alat yang berfungsi memancarkan dan menerima gelombang radio untuk komunikasi seluler sering disebut...",
+                options: ["Router", "Kabel LAN", "BTS (Base Transceiver Station)", "Server"],
+                answer: 2
+            },
+            {
+                question: "Teknologi jaringan seluler yang sangat ideal untuk streaming video HD dan video call karena kecepatannya adalah...",
+                options: ["1G", "2G", "4G (LTE)", "Edge"],
+                answer: 2
+            },
+            {
+                question: "Proses ketika HP secara otomatis mencari menara pemancar baru saat kita bepergian ke luar kota agar tidak terputus disebut...",
+                options: ["Tethering", "Handoff", "Enkripsi", "Phishing"],
+                answer: 1
+            },
+            {
+                question: "Fitur yang digunakan untuk membagikan koneksi internet dari HP ke laptop adalah...",
+                options: ["Handoff", "Tethering / Personal Hotspot", "Mode Pesawat", "Enkripsi"],
+                answer: 1
+            },
+            {
+                question: "Generasi seluler terbaru yang memiliki kecepatan luar biasa dan latensi (jeda) sangat rendah adalah...",
+                options: ["3G", "4G", "5G", "Satelit"],
+                answer: 2
+            },
+            {
+                question: "Informasi yang menunjuk pada identitas seseorang seperti NIK, password, dan OTP disebut...",
+                options: ["Data Publik", "Data Pribadi", "Data Enkripsi", "Data Palsu"],
+                answer: 1
+            },
+            {
+                question: "Mengapa kita harus berhati-hati saat menggunakan Wi-Fi publik di kafe tanpa password?",
+                options: ["Karena harganya mahal", "Karena membuat HP cepat rusak", "Karena data kita rentan disadap oleh peretas", "Karena sinyalnya selalu buruk"],
+                answer: 2
+            },
+            {
+                question: "Kejahatan dunia maya dengan mengirim tautan palsu (misal undangan nikah .apk) untuk mencuri data disebut...",
+                options: ["Hacking", "Carding", "Phishing", "Handoff"],
+                answer: 2
+            },
+            {
+                question: "Proses menyandikan atau mengacak teks asli menjadi teks yang tidak dapat dibaca disebut...",
+                options: ["Enkripsi", "Dekripsi", "Browsing", "Tethering"],
+                answer: 0
+            },
+            {
+                question: "Dalam enkripsi, data asli yang belum diacak dan masih bisa dibaca dengan jelas disebut...",
+                options: ["Ciphertext", "Plaintext", "Password", "Kunci rahasia"],
+                answer: 1
+            },
+            {
+                question: "Teks atau data yang sudah berhasil diacak (dienkripsi) dan tidak bisa langsung dibaca disebut...",
+                options: ["Plaintext", "Ciphertext", "URL", "HTTPS"],
+                answer: 1
+            },
+            {
+                question: "Teknologi yang digunakan oleh WhatsApp agar pesan hanya bisa dibaca oleh pengirim dan penerima saja adalah...",
+                options: ["Wi-Fi Public", "Handoff", "End-to-End Encryption", "4G LTE"],
+                answer: 2
+            },
+            {
+                question: "Tanda bahwa sebuah website aman (jalur komunikasinya dienkripsi) biasanya ditunjukkan pada browser dengan adanya...",
+                options: ["Warna merah pada layar", "Ikon gembok dan awalan HTTPS pada alamat web", "Tulisan HTTP saja", "Ikon bintang di sebelah alamat web"],
+                answer: 1
+            },
+            {
+                question: "Apa tujuan utama dari memberikan password pada dokumen Word atau Excel (File Encryption)?",
+                options: ["Agar ukuran file menjadi lebih kecil", "Agar tampilan dokumen lebih menarik", "Melindungi isi dokumen agar tidak bisa dibuka oleh orang yang tidak berhak", "Agar file tidak terkena virus"],
+                answer: 2
+            },
+            {
+                question: "Manakah pernyataan yang BENAR mengenai jaringan internet?",
+                options: ["Internet lebih kecil cakupannya dibanding jaringan lokal", "Saat terhubung ke internet, perangkat kita sepenuhnya aman dari ancaman tanpa perlu pelindung", "Internet adalah kumpulan jaringan lokal yang saling terhubung secara global", "Internet hanya bisa diakses menggunakan kabel fiber optik"],
+                answer: 2
+            }
+        ];
+
+        // Variabel global
+        let studentName = "";
+        let studentClass = "";
+
+        // Fungsi Memulai Kuis (Validasi Form)
+        window.startQuiz = function() {
+            const nameInput = document.getElementById('student-name').value.trim();
+            const classInput = document.getElementById('student-class').value;
+            const errorBox = document.getElementById('form-error');
+
+            if (nameInput === "" || classInput === "") {
+                errorBox.classList.remove('hidden');
+                return; // Stop execution
+            }
+
+            // Save data
+            studentName = nameInput;
+            studentClass = classInput;
+            
+            // UI Updates
+            errorBox.classList.add('hidden');
+            document.getElementById('student-form').classList.add('hidden');
+            document.getElementById('questions-area').classList.remove('hidden');
+            document.getElementById('display-student').innerText = `${studentName} (${studentClass})`;
+
+            renderQuestions();
+        };
+
+        // Render semua 20 pertanyaan
+        function renderQuestions() {
+            const listContainer = document.getElementById('questions-list');
+            listContainer.innerHTML = ''; // Kosongkan dulu
+
+            quizData.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = "bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-sm";
+
+                // Question Title
+                const qTitle = document.createElement('h4');
+                qTitle.className = "text-lg font-medium text-white mb-4";
+                qTitle.innerHTML = `<span class="text-blue-400 mr-2">${index + 1}.</span> ${q.question}`;
+                questionDiv.appendChild(qTitle);
+
+                // Options Container
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = "grid gap-3";
+
+                q.options.forEach((opt, optIndex) => {
+                    const label = document.createElement('label');
+                    label.className = "relative flex cursor-pointer";
+                    
+                    const radio = document.createElement('input');
+                    radio.type = "radio";
+                    radio.name = `question_${index}`;
+                    radio.value = optIndex;
+                    radio.className = "custom-radio sr-only"; // hide native radio
+
+                    const customDesign = document.createElement('div');
+                    customDesign.className = "w-full p-3 rounded-lg border border-slate-600 bg-slate-700/50 text-slate-300 hover:bg-slate-600 transition duration-200 flex items-center";
+                    customDesign.innerText = opt;
+
+                    label.appendChild(radio);
+                    label.appendChild(customDesign);
+                    optionsDiv.appendChild(label);
+                });
+
+                questionDiv.appendChild(optionsDiv);
+                listContainer.appendChild(questionDiv);
+            });
+        }
+
+        // Fungsi Mengumpulkan Kuis
+        window.submitQuiz = async function() {
+            const errorBox = document.getElementById('quiz-error');
+            let answeredCount = 0;
+            let correctAnswers = 0;
+
+            // Loop untuk cek jawaban
+            for (let i = 0; i < quizData.length; i++) {
+                const selected = document.querySelector(`input[name="question_${i}"]:checked`);
+                if (selected) {
+                    answeredCount++;
+                    if (parseInt(selected.value) === quizData[i].answer) {
+                        correctAnswers++;
+                    }
+                }
+            }
+
+            // Validasi apakah semua sudah diisi
+            if (answeredCount < quizData.length) {
+                errorBox.classList.remove('hidden');
+                errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+
+            // Lulus validasi
+            errorBox.classList.add('hidden');
+            
+            const submitBtn = document.querySelector('button[onclick="submitQuiz()"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Menyimpan ke Database... <i class="fas fa-spinner fa-spin ml-2"></i>';
+            submitBtn.disabled = true;
+
+            const finalScore = (correctAnswers / quizData.length) * 100;
+            const wrongAnswers = quizData.length - correctAnswers;
+
+            // Kirim data ke Google Sheets via Google Apps Script
+            try {
+                if(scriptURL !== 'MASUKKAN_URL_WEB_APP_APPS_SCRIPT_DI_SINI') {
+                    await fetch(scriptURL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            name: studentName,
+                            className: studentClass,
+                            score: finalScore,
+                            correct: correctAnswers
+                        }),
+                        headers: { 'Content-Type': 'text/plain;charset=utf-8' } // Memakai text/plain mencegah error blokir keamanan (CORS) browser
+                    });
+                } else {
+                    console.warn("URL Google Apps Script belum diisi! Data hanya ditampilkan lokal, belum masuk ke Google Sheets.");
+                }
+            } catch (error) {
+                console.error("Gagal menyimpan ke Google Sheets:", error);
+            }
+
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+
+            // Tampilkan hasil
+            document.getElementById('questions-area').classList.add('hidden');
+            document.getElementById('result-area').classList.remove('hidden');
+            
+            const scoreDisplay = document.getElementById('score-display');
+            scoreDisplay.innerText = finalScore;
+            
+            if (finalScore >= 80) {
+                scoreDisplay.parentElement.classList.replace('border-blue-500', 'border-green-500');
+                scoreDisplay.parentElement.classList.replace('bg-slate-800', 'bg-green-900/30');
+            } else if (finalScore >= 60) {
+                scoreDisplay.parentElement.classList.replace('border-blue-500', 'border-yellow-500');
+            } else {
+                scoreDisplay.parentElement.classList.replace('border-blue-500', 'border-red-500');
+                scoreDisplay.parentElement.classList.replace('bg-slate-800', 'bg-red-900/30');
+            }
+
+            let greetingStr = "";
+            if(finalScore === 100) greetingStr = "Sempurna,";
+            else if(finalScore >= 80) greetingStr = "Luar Biasa,";
+            else if(finalScore >= 60) greetingStr = "Kerja Bagus,";
+            else greetingStr = "Tetap Semangat,";
+
+            document.getElementById('result-greeting').innerText = `${greetingStr} ${studentName}!`;
+            document.getElementById('result-class').innerText = studentClass;
+            document.getElementById('correct-count').innerText = correctAnswers;
+            document.getElementById('wrong-count').innerText = wrongAnswers;
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // Mengubah fungsi tombol Spreadsheet untuk memberitahu siswa
+        document.getElementById('btn-view-data').addEventListener('click', () => {
+            const area = document.getElementById('spreadsheet-area');
+            area.classList.remove('hidden');
+            area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            const tbody = document.getElementById('spreadsheet-body');
+            tbody.innerHTML = `<tr><td colspan="5" class="p-8 text-center text-green-400 font-medium">
+                <i class="fas fa-check-circle text-4xl mb-4 block text-green-500"></i>
+                <p class="text-lg">Data jawabanmu telah berhasil terkirim ke server sekolah.</p>
+                <p class="text-slate-400 text-sm mt-2">Bapak/Ibu Guru dapat melihat langsung rekapan nilaimu di Google Sheets.</p>
+            </td></tr>`;
+        });
+
+        document.getElementById('btn-close-data').addEventListener('click', () => {
+            document.getElementById('spreadsheet-area').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
